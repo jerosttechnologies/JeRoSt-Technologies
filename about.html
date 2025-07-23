@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>About Us | JeRoSt Technologies</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background-color: #0f0f0f;
+      color: #fff;
+      line-height: 1.6;
+      overflow-x: hidden;
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 10%;
+      background-color: #111;
+      position: relative;
+      z-index: 1000;
+    }
+    header img {
+      height: 60px;
+    }
+    nav ul {
+      display: flex;
+      gap: 20px;
+      list-style: none;
+    }
+    nav a {
+      text-decoration: none;
+      color: #fff;
+      font-weight: 500;
+      transition: 0.3s;
+    }
+    nav a:hover {
+      color: red;
+      transform: scale(1.1);
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: auto;
+      padding: 40px 20px;
+      animation: fadeIn 1.5s ease-in-out;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    h1, h2 {
+      color: #e63946;
+      transition: color 0.3s ease;
+    }
+    h1:hover, h2:hover {
+      color: #ff4f5a;
+    }
+
+    .section {
+      margin-bottom: 40px;
+    }
+
+    .highlight {
+      color: #ffffff;
+      font-weight: 500;
+    }
+
+    .values {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+
+    .value-box {
+      background: #1e1e1e;
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 0 15px rgba(255, 0, 0, 0.2);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .value-box:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 0 20px rgba(255, 0, 0, 0.4);
+    }
+
+    .founders {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 30px;
+      margin-top: 30px;
+      justify-content: center;
+    }
+
+    .founder {
+      flex: 1 1 250px;
+      text-align: center;
+      animation: popIn 1s ease forwards;
+      opacity: 0;
+    }
+
+    .founder:nth-child(1) { animation-delay: 0.2s; }
+    .founder:nth-child(2) { animation-delay: 0.4s; }
+    .founder:nth-child(3) { animation-delay: 0.6s; }
+    .founder:nth-child(4) { animation-delay: 0.8s; }
+
+    @keyframes popIn {
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+      from {
+        opacity: 0;
+        transform: translateY(30px);
+      }
+    }
+
+    .founder img {
+      width: 200px;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 50%;
+      border: 4px solid #e63946;
+      transition: transform 0.3s ease;
+    }
+
+    .founder img:hover {
+      transform: scale(1.05);
+    }
+
+    .founder h3 {
+      margin-top: 15px;
+      color: #fff;
+    }
+
+    .founder p {
+      font-size: 14px;
+      color: #ccc;
+    }
+
+    footer {
+      background: #000;
+      color: #aaa;
+      padding: 20px;
+      text-align: center;
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <img src="images/JeRoStTechnologiesLogomain.png" alt="JeRoSt Logo">
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="services.html">Our Services</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="container">
+    <div class="section">
+      <h1>About Us</h1>
+      <p><span class="highlight">JeRoSt Technologies</span> was founded by four passionate and enthusiastic youngsters who believed in the power of skill, creativity, and hard work. With expertise in <strong>CCTV security systems</strong>, <strong>IT services</strong>, <strong>web development</strong>, <strong>electrical engineering</strong>, and <strong>solar technologies</strong>, we joined forces to deliver smart, affordable, and top-quality solutions under one roof.</p>
+      <p>Our name symbolizes the unity and strength of our team – driven by innovation, powered by passion, and committed to empowering clients through modern tech and solutions.</p>
+      <div class="founders">
+        <div class="founder">
+          <img src="images/jerin.jpg" alt="Jerin Jude Allan">
+          <h3>Jerin Jude Allan</h3>
+          <p>Head of CCTV installations & Services, IT solutions, Web Designing, Computer & Laptop Services</p>
+        </div>
+        <div class="founder">
+          <img src="images/robin.jpg" alt="Robinson">
+          <h3>Robinson</h3>
+          <p>Head of Electrical and Designing Works</p>
+        </div>
+        <div class="founder">
+          <img src="images/stephen.jpg" alt="Stephen Raj">
+          <h3>Stephen Raj</h3>
+          <p>Head of Solar Power Systems and Energy Efficiency Solutions</p>
+        </div>
+        <div class="founder">
+          <img src="images/kiruthika.jpg" alt="Kiruthika">
+          <h3>Kiruthika</h3>
+          <p>Head of Projects & Research, Coordinating Strategic Tech Initiatives</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="section">
+      <h2>Our Mission</h2>
+      <p>To become a trusted name in technology and multi-services by providing innovative, efficient, and secure solutions that simplify lives and empower businesses.</p>
+    </div>
+
+    <div class="section">
+      <h2>Our Vision</h2>
+      <p>To lead the way in delivering multi-tech solutions that redefine quality, accessibility, and reliability – reaching every home, office, and institution with smart services that matter.</p>
+    </div>
+
+    <div class="section">
+      <h2>Our Core Values</h2>
+      <div class="values">
+        <div class="value-box">
+          <h3>Innovation</h3>
+          <p>We embrace new technologies and ideas to stay ahead and deliver top-notch solutions.</p>
+        </div>
+        <div class="value-box">
+          <h3>Integrity</h3>
+          <p>We value transparency, honesty, and building long-term trust with our clients.</p>
+        </div>
+        <div class="value-box">
+          <h3>Teamwork</h3>
+          <p>We grow as one – combining our skills to create something bigger than ourselves.</p>
+        </div>
+        <div class="value-box">
+          <h3>Customer Focus</h3>
+          <p>Your satisfaction drives us – we deliver what you need, how you need it, when you need it.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    &copy; 2025 JeRoSt Technologies. All rights reserved.
+  </footer>
+
+</body>
+</html>

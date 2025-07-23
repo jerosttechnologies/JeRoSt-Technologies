@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>JeRoSt Technologies</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+    body {
+      background-color: #000;
+      color: #fff;
+      scroll-behavior: smooth;
+      animation: fadeIn 1s ease-out;
+    }
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 10%;
+      background-color: #111;
+      position: relative;
+      z-index: 1000;
+    }
+    header img {
+      height: 60px;
+    }
+    nav ul {
+      display: flex;
+      gap: 20px;
+      list-style: none;
+    }
+    nav a {
+      text-decoration: none;
+      color: #fff;
+      font-weight: 500;
+      transition: 0.3s;
+    }
+    nav a:hover {
+      color: red;
+      transform: scale(1.1);
+    }
+
+    .hero {
+      padding: 80px 10%;
+      text-align: center;
+      background: linear-gradient(to right, #000, #220000);
+      opacity: 0;
+      animation: fadeIn 2s forwards;
+    }
+    .hero h1 {
+      font-size: 3rem;
+      animation: fadeInUp 1s forwards;
+    }
+    .hero h2 {
+      font-size: 1.5rem;
+      color: #f33;
+      margin: 20px 0;
+      animation: fadeInUp 1.5s forwards;
+    }
+
+    .intro {
+      padding: 60px 10%;
+      text-align: center;
+      background: #111;
+      opacity: 0;
+      animation: fadeIn 2s forwards;
+    }
+    .intro p {
+      font-size: 1.1rem;
+      max-width: 800px;
+      margin: auto;
+      line-height: 1.8;
+      color: #ccc;
+    }
+
+    .services {
+      padding: 80px 10%;
+      background: #000;
+      opacity: 0;
+      animation: fadeIn 2s forwards;
+    }
+    .services h2 {
+      text-align: center;
+      color: red;
+      margin-bottom: 40px;
+      font-size: 2rem;
+    }
+    .service-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 30px;
+      opacity: 0;
+      animation: fadeIn 2s forwards;
+    }
+    .card {
+      background: #222;
+      padding: 30px;
+      border-radius: 10px;
+      text-align: center;
+      transition: transform 0.3s;
+      border: 1px solid #333;
+      opacity: 0;
+      animation: fadeInUp 2s forwards;
+    }
+    .card:hover {
+      transform: translateY(-10px);
+      border-color: red;
+    }
+    .card h3 {
+      color: #fff;
+      margin-bottom: 10px;
+    }
+    .card p {
+      font-size: 0.9rem;
+      color: #ccc;
+    }
+
+    .why-us {
+      padding: 80px 10%;
+      background: #111;
+      opacity: 0;
+      animation: fadeIn 2s forwards;
+    }
+    .why-us h2 {
+      text-align: center;
+      color: red;
+      margin-bottom: 30px;
+    }
+    .why-us ul {
+      list-style: none;
+      max-width: 800px;
+      margin: auto;
+      padding: 0;
+    }
+    .why-us li {
+      padding: 10px 0;
+      border-bottom: 1px solid #333;
+      font-size: 1rem;
+      color: #ccc;
+    }
+
+    .cta {
+      text-align: center;
+      padding: 60px 10%;
+      background: linear-gradient(to right, #220000, #000);
+      animation: fadeIn 2s forwards;
+    }
+    .cta h2 {
+      font-size: 1.8rem;
+      margin-bottom: 20px;
+      color: #fff;
+      opacity: 0;
+      animation: fadeInUp 1s forwards;
+    }
+    .cta button {
+      background: red;
+      border: none;
+      padding: 15px 30px;
+      color: #fff;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: 0.3s;
+      border-radius: 8px;
+    }
+    .cta button:hover {
+      background: #fff;
+      color: #000;
+      transform: scale(1.05);
+    }
+
+    footer {
+      background: #000;
+      color: #aaa;
+      padding: 20px;
+      text-align: center;
+      font-size: 0.9rem;
+    }
+
+    @keyframes fadeIn {
+      0% { opacity: 0; }
+      100% { opacity: 1; }
+    }
+
+    @keyframes fadeInUp {
+      0% { opacity: 0; transform: translateY(20px); }
+      100% { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes slideIn {
+      0% { transform: translateX(-100%); }
+      100% { transform: translateX(0); }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <img src="images/JeRoStTechnologiesLogomain.png" alt="JeRoSt Logo">
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="services.html">Our Services</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h1>JeRoSt Technologies</h1>
+    <h2>Your One-Stop Partner In Infinite Services</h2>
+  </section>
+
+  <section class="intro">
+    <p>Welcome to JeRoSt Technologies — a growing hub of technology, security, and smart services. Whether it's safeguarding your home, upgrading your systems, or building an online presence, we bring the power of innovation to your doorstep. Powered by passion, driven by commitment.</p>
+  </section>
+
+  <section class="services" id="services">
+    <h2>Our Services</h2>
+    <div class="service-grid">
+      <div class="card">
+        <h3>CCTV Installation & Services</h3>
+        <p>Secure your home or office with high-quality surveillance systems installations and support.</p>
+      </div>
+      <div class="card">
+        <h3>Computer & Laptop Services</h3>
+        <p>Repairs, maintenance, upgrades, and custom builds to keep you running smoothly.</p>
+      </div>
+      <div class="card">
+        <h3>Web Designing</h3>
+        <p>Modern, responsive websites tailored to your brand and audience</p>
+      </div>
+      <div class="card">
+        <h3>Electrical Works</h3>
+        <p>Expert residential and commercial electrical services.</p>
+      </div>
+      <div class="card">
+        <h3>Solar Projects & Services</h3>
+        <p>Energy-efficient solar panel systems for homes and businesses.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="why-us">
+    <h2>Why Choose JeRoSt?</h2>
+    <ul>
+      <li>✓ Experienced Team with Diverse Skills</li>
+      <li>✓ Reliable After-Sales Support</li>
+      <li>✓ Customized Solutions Tailored to You</li>
+      <li>✓ Affordable Pricing & Transparent Process</li>
+      <li>✓ Quality Products & Trusted Brands</li>
+    </ul>
+  </section>
+
+  <section class="cta" id="contact">
+    <h2>Ready to Secure & Power Up Your Space?</h2>
+    <button onclick="window.location.href='about.html'">Learn More About Us</button>
+  </section>
+
+  <footer>
+    &copy; 2025 JeRoSt Technologies. All rights reserved.
+  </footer>
+
+</body>
+</html>

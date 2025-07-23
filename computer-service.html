@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Computer & Laptop Services | JeRoSt Technologies</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+    body {
+      background-color: #000;
+      color: #fff;
+    }
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 10%;
+      background-color: #111;
+    }
+    header img {
+      height: 60px;
+    }
+    nav ul {
+      display: flex;
+      gap: 20px;
+      list-style: none;
+    }
+    nav a {
+      text-decoration: none;
+      color: #fff;
+      font-weight: 500;
+      transition: 0.3s;
+    }
+    nav a:hover {
+      color: red;
+      transform: scale(1.1);
+    }
+
+    .banner {
+      width: 100%;
+      max-height: 400px;
+      overflow: hidden;
+    }
+    .banner img {
+      width: 100%;
+      height: auto;
+      object-fit: cover;
+    }
+
+    .content {
+      padding: 60px 10%;
+      animation: fadeIn 1.5s ease-out;
+    }
+
+    .content h1 {
+      font-size: 2.5rem;
+      color: red;
+      margin-bottom: 20px;
+    }
+
+    .content p {
+      font-size: 1.1rem;
+      line-height: 1.8;
+      color: #ccc;
+      margin-bottom: 20px;
+    }
+
+    .service-item {
+      margin-bottom: 40px;
+      text-align: center;
+    }
+
+    .service-item h3 {
+      color: #fff;
+      font-size: 1.2rem;
+      margin-bottom: 10px;
+    }
+
+    .service-item img {
+      width: 100%;
+      max-width: 500px;
+      border-radius: 10px;
+      margin: 10px 0;
+    }
+
+    .service-item p {
+      font-size: 1rem;
+      color: #ccc;
+      line-height: 1.6;
+    }
+
+    .back-btn {
+      text-align: center;
+      margin-top: 40px;
+    }
+
+    .back-btn a {
+      display: inline-block;
+      padding: 12px 24px;
+      background-color: red;
+      color: #fff;
+      text-decoration: none;
+      border-radius: 6px;
+      font-weight: 600;
+      transition: 0.3s;
+    }
+
+    .back-btn a:hover {
+      background-color: #fff;
+      color: #000;
+    }
+
+    footer {
+      background: #000;
+      color: #aaa;
+      padding: 20px;
+      text-align: center;
+      font-size: 0.9rem;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <img src="images/JeRoStTechnologiesLogomain.png" alt="JeRoSt Logo">
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="services.html">Our Services</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="banner">
+    <img src="images/computer-banner.jpg" alt="Computer Services Banner">
+  </div>
+
+  <div class="content">
+    <h1>Computer & Laptop Services</h1>
+
+    <p>We fix. We build. We upgrade. At JeRoSt, we offer full-scale computer and laptop solutions — whether it’s a broken screen, laggy system, or a custom setup.</p>
+
+    <p>We work with care, speed, and clarity. From home users to office networks, we’ve got your tech backed up and running smooth.</p>
+
+    <h2>What We Offer:</h2>
+
+    <div class="service-item">
+      <h3>✔ Hardware Repair & Replacements</h3>
+      <img src="images/hardware-repair.jpg" alt="Hardware Repair">
+      <p>We replace damaged components like RAM, hard drives, keyboards, and motherboards with precision.</p>
+    </div>
+
+    <div class="service-item">
+      <h3>✔ OS Installation & Virus Removal</h3>
+      <img src="images/os-install-virus-remove.jpg" alt="OS Installation">
+      <p>We reinstall Windows/Linux, remove malware, and optimize your system for faster performance.</p>
+    </div>
+
+    <div class="service-item">
+      <h3>✔ Laptop Screen & Keyboard Fixes</h3>
+      <img src="images/screen-keyboard-fix.jpg" alt="Laptop Fix">
+      <p>Cracked screen? Sticky keys? We repair or replace them with genuine parts and clean installations.</p>
+    </div>
+
+    <div class="service-item">
+      <h3>✔ Custom-built Desktops & Upgrades</h3>
+      <img src="images/custom-desktop.jpg" alt="Custom PC">
+      <p>Need a system for gaming, design, or business? We build to your specs and future-proof your PC.</p>
+    </div>
+
+    <div class="service-item">
+      <h3>✔ On-site and Remote Support</h3>
+      <img src="images/remote-support.jpg" alt="Remote Support">
+      <p>Whether you're next door or in the next city, we’re just a call away for quick fixes and setups.</p>
+    </div>
+
+    <div class="back-btn">
+      <a href="services.html">← Back to Other Services</a>
+    </div>
+  </div>
+
+  <footer>
+    &copy; 2025 JeRoSt Technologies. All rights reserved.
+  </footer>
+
+</body>
+</html>
