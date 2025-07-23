@@ -197,6 +197,14 @@
       100% { transform: translateX(0); }
     }
   </style>
+  <script>
+    function animateAndRedirect(card, url) {
+      card.classList.add('clicked');
+      setTimeout(() => {
+        window.location.href = url;
+      }, 300);
+    }
+  </script>
 </head>
 <body>
 
@@ -224,29 +232,25 @@
   <section class="services" id="services">
     <h2>Our Services</h2>
     <div class="service-grid">
-      <div class="card"><a href="cctv.html">
+      <div class="card" onclick="animateAndRedirect(this, 'cctv.html')">
         <h3>CCTV Installation & Services</h3>
         <p>Secure your home or office with high-quality surveillance systems installations and support.</p>
-              </a></div>
-      <div class="card"><a href="computer-service.html">
+        </div>
+      <div class="card" onclick="animateAndRedirect(this, 'computer-service.html')">
         <h3>Computer & Laptop Services</h3>
         <p>Repairs, maintenance, upgrades, and custom builds to keep you running smoothly.</p>
-        </a>
       </div>
-      <div class="card"><a href="web-design.html">
+      <div class="card" onclick="animateAndRedirect(this, 'web-design.html')">
         <h3>Web Designing</h3>
         <p>Modern, responsive websites tailored to your brand and audience</p>
-        </a>
       </div>
-      <div class="card"><a href="electrical.html">
+      <div class="card" onclick="animateAndRedirect(this, 'electrical.html')">
         <h3>Electrical Works</h3>
         <p>Expert residential and commercial electrical services.</p>
-        </a>
       </div>
-      <div class="card"><a href="solar.html">
+      <div class="card" onclick="animateAndRedirect(this, 'solar.html')">
         <h3>Solar Projects & Services</h3>
         <p>Energy-efficient solar panel systems for homes and businesses.</p>
-        </a>
       </div>
     </div>
   </section>
